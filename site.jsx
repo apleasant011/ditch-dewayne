@@ -723,9 +723,13 @@ const Petition = ({ onSign, signed, signedName }) => {
         <div style={{ display: "flex", flexDirection: "column", gap: 64 }}>
           <div style={{
             background: "var(--paper)",
-            padding: "48px 48px 56px",
+            padding: "64px 72px 72px",
             borderTop: "3px solid var(--ink)",
             position: "relative",
+            alignSelf: "center",
+            width: "100%",
+            maxWidth: 680,
+            boxShadow: "0 24px 48px -28px rgba(0,0,0,0.18)",
           }}>
             <div style={{
               position: "absolute",
@@ -757,7 +761,7 @@ const Petition = ({ onSign, signed, signedName }) => {
               <strong style={{ color: "var(--ink)", fontWeight: 600 }}>To:</strong> President Robert L. Manuel<br/>
               and the DePaul University Board of Trustees
             </div>
-            <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 17, lineHeight: 1.6, color: "var(--ink-80)", maxWidth: 480 }}>
+            <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 17, lineHeight: 1.6, color: "var(--ink-80)" }}>
               <p style={{ margin: 0 }}>
                 We — the undersigned alumni, students, donors, season-ticket holders, and fans — formally call for a change in leadership at DePaul Athletics, and ask that the university part ways with DeWayne Peevy as Senior Vice President and Director of Athletics.
               </p>
