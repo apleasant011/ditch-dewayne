@@ -1,7 +1,8 @@
 /* global React, ReactDOM */
 const { useState, useEffect } = React;
 
-const ACCENT = { ink: "oklch(0.58 0.15 28)", tint: "oklch(0.94 0.04 28)" };
+const ACCENT = { ink: "oklch(0.42 0.10 250)", tint: "oklch(0.93 0.03 250)" };
+const SCARLET = "oklch(0.58 0.15 28)";
 
 /* ---------- Small primitives ---------- */
 
@@ -40,7 +41,7 @@ const Hero = ({ signatures }) => (
         fontStyle: "italic",
         color: "var(--ink-80)",
       }}>
-        Ditch <span style={{ fontStyle: "normal", fontWeight: 600 }}>DeWayne</span>
+        <span style={{ color: "var(--scarlet)", fontWeight: 600 }}>Ditch</span> <span style={{ fontStyle: "normal", fontWeight: 600 }}>DeWayne</span>
       </div>
       <nav style={{ display: "flex", gap: 28 }}>
         {["The case", "The numbers", "The petition"].map((s, i) => (
@@ -1024,6 +1025,7 @@ function App() {
     "--ink-10": "oklch(0.93 0.004 60)",
     "--accent-ink": ACCENT.ink,
     "--accent-tint": ACCENT.tint,
+    "--scarlet": SCARLET,
   };
 
   return (
