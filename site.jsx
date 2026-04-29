@@ -188,7 +188,7 @@ const SaidVsSeen = () => {
         margin: "0 0 56px",
         maxWidth: 900,
       }}>
-        What was promised, <span style={{ fontStyle: "italic", color: "var(--accent-ink)" }}>and what arrived.</span>
+        <span style={{ color: "var(--accent-ink)" }}>What was promised,</span> <span style={{ fontStyle: "italic", color: "var(--scarlet)" }}>and what arrived.</span>
       </h2>
 
       <div style={{ display: "grid", gridTemplateColumns: "auto 1fr 1fr", gap: 0 }}>
