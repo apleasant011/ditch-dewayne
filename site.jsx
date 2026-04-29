@@ -125,8 +125,6 @@ const Hero = ({ signatures }) => (
             objectFit: "cover",
             objectPosition: "center 25%",
             display: "block",
-            filter: "grayscale(1) contrast(1.05)",
-            mixBlendMode: "multiply",
           }}
         />
         <div style={{
