@@ -24,18 +24,126 @@
   ::selection { background: oklch(0.42 0.10 250 / 0.2); }
   input, select, textarea { font-family: 'EB Garamond', Georgia, serif; }
   input:focus, select:focus, textarea:focus { border-color: oklch(0.22 0.01 60) !important; }
-  @media (max-width: 880px) {
-    section { padding-left: 24px !important; padding-right: 24px !important; }
-    h1, h2 { font-size: clamp(40px, 9vw, 64px) !important; }
+  /* Tablet */
+  @media (max-width: 1024px) {
+    section { padding-left: 32px !important; padding-right: 32px !important; }
+    footer { padding-left: 32px !important; padding-right: 32px !important; }
+  }
+
+  /* Mobile */
+  @media (max-width: 720px) {
+    section { padding: 64px 20px !important; }
+    footer { padding: 56px 20px 40px !important; }
+    h1 { font-size: clamp(48px, 12vw, 80px) !important; }
+    h2 { font-size: clamp(34px, 8.5vw, 56px) !important; }
+
+    /* Collapse all 2- and 3-col grids to single column */
     [style*="grid-template-columns: 1fr 1fr"],
     [style*="grid-template-columns: 1.4fr 1fr"],
     [style*="grid-template-columns: 1fr 1.3fr"],
-    [style*="grid-template-columns: 1.3fr 1fr 1fr 1fr"],
+    [style*="grid-template-columns: 1.4fr 1fr 1fr"],
     [style*="grid-template-columns: repeat(3, 1fr)"] {
       grid-template-columns: 1fr !important;
-      gap: 40px !important;
+      gap: 32px !important;
     }
-    [style*="columnCount: 3"], [style*="column-count: 3"] { column-count: 1 !important; }
+
+    /* Cost-per-win calc 4-col → 2x2 */
+    [style*="grid-template-columns: 1.3fr 1fr 1fr 1fr"] {
+      grid-template-columns: 1fr 1fr !important;
+      gap: 20px !important;
+    }
+
+    /* Drought timeline 22-col → 11-col */
+    [style*="grid-template-columns: repeat(22, 1fr)"] {
+      grid-template-columns: repeat(11, 1fr) !important;
+    }
+
+    /* Said vs. Seen 3-col → stacked */
+    [style*="grid-template-columns: auto 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+
+    /* Petition affiliation/year/zip 3-col → stacked pair */
+    [style*="grid-template-columns: 1.4fr 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+      gap: 12px !important;
+    }
+
+    /* Trend table 5-col: shrink fonts/padding */
+    [style*="grid-template-columns: 1.2fr 1fr 1fr 1.4fr 1fr"] > div {
+      font-size: 12px !important;
+      padding: 14px 2px !important;
+    }
+
+    /* Wall masonry: 1 col */
+    [style*="columnCount: 3"],
+    [style*="column-count: 3"] { column-count: 1 !important; }
+
+    /* Hero H1 */
+    [style*="clamp(64px, 9vw, 132px)"] {
+      font-size: clamp(52px, 13vw, 84px) !important;
+    }
+
+    /* Big "22" numeral */
+    [style*="clamp(180px, 26vw, 380px)"] {
+      font-size: clamp(150px, 44vw, 240px) !important;
+      margin-top: 0 !important;
+    }
+
+    /* Open-letter card: less padding on mobile */
+    [style*="padding: \"64px 72px 72px\""] {
+      padding: 40px 24px 48px !important;
+    }
+
+    /* Press tile padding */
+    [style*="padding: \"24px 26px 22px\""] {
+      padding: 18px 18px 16px !important;
+    }
+
+    /* Petition seal shrink/reposition */
+    [style*="width: 92"][style*="height: 92"] {
+      width: 56px !important;
+      height: 56px !important;
+      right: 14px !important;
+      top: 14px !important;
+    }
+    [style*="width: 92"][style*="height: 92"] > div:first-child {
+      font-size: 13px !important;
+    }
+    [style*="width: 92"][style*="height: 92"] > div:last-child {
+      font-size: 7px !important;
+    }
+
+    /* Hero nav links wrap */
+    nav { flex-wrap: wrap !important; gap: 14px !important; }
+
+    /* Trend table inner padding */
+    [style*="padding: \"8px 32px 32px\""] {
+      padding: 4px 12px 16px !important;
+    }
+
+    /* Press release card padding */
+    [style*="padding: \"36px 36px 40px\""] {
+      padding: 24px 22px 28px !important;
+    }
+    [style*="padding: \"48px 48px 56px\""] {
+      padding: 28px 20px 32px !important;
+    }
+
+    /* Hero CTA buttons */
+    [style*="padding: \"16px 28px\""] { padding: 14px 22px !important; font-size: 11px !important; }
+
+    /* Footer columns 3-col → 1-col */
+    [style*="grid-template-columns: 1.4fr 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  /* Very small phones */
+  @media (max-width: 380px) {
+    section { padding: 56px 16px !important; }
+    h1 { font-size: clamp(44px, 13vw, 64px) !important; }
+    h2 { font-size: clamp(30px, 9vw, 44px) !important; }
   }
 </style>
 </head>

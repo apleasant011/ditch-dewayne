@@ -931,13 +931,13 @@ const Wall = ({ extras }) => {
             breakInside: "avoid",
             marginBottom: 24,
             padding: "24px 26px 24px",
-            background: i % 4 === 1 ? "var(--accent-tint)" : "var(--paper-warm)",
-            borderTop: "1px solid var(--ink)",
+            background: i % 2 === 1 ? "var(--accent-tint)" : "var(--paper-warm)",
+            borderTop: "2px solid var(--scarlet)",
           }}>
             <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 18, lineHeight: 1.5, fontStyle: "italic", color: "var(--ink)" }}>
               "{q.text}"
             </div>
-            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-60)", marginTop: 16 }}>
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--scarlet)", marginTop: 16 }}>
               — {q.name}{q.year && `, ${q.year}`}
             </div>
           </div>
