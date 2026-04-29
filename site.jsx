@@ -34,7 +34,7 @@ const SectionLabel = ({ num, label }) => (
 
 const Hero = ({ signatures }) => (
   <section style={{ padding: "80px 64px 64px", maxWidth: 1240, margin: "0 auto" }}>
-    <div style={{ marginBottom: 96 }}>
+    <div style={{ marginBottom: 24 }}>
       <div style={{
         fontFamily: "'EB Garamond', serif",
         fontSize: 18,
