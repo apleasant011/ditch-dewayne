@@ -34,7 +34,7 @@ const SectionLabel = ({ num, label }) => (
 
 const Hero = ({ signatures }) => (
   <section style={{ padding: "80px 64px 64px", maxWidth: 1240, margin: "0 auto" }}>
-    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 96 }}>
+    <div style={{ marginBottom: 96 }}>
       <div style={{
         fontFamily: "'EB Garamond', serif",
         fontSize: 18,
@@ -43,18 +43,6 @@ const Hero = ({ signatures }) => (
       }}>
         <span style={{ color: "var(--scarlet)", fontWeight: 600 }}>Ditch</span> <span style={{ fontStyle: "normal", fontWeight: 600 }}>DeWayne</span>
       </div>
-      <nav style={{ display: "flex", gap: 28 }}>
-        {["The case", "The numbers", "The petition"].map((s, i) => (
-          <a key={i} href={`#s${i}`} style={{
-            fontFamily: "'JetBrains Mono', monospace",
-            fontSize: 12,
-            letterSpacing: "0.12em",
-            color: "var(--ink-80)",
-            textDecoration: "none",
-            textTransform: "uppercase",
-          }}>{s}</a>
-        ))}
-      </nav>
     </div>
 
     <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr", gap: 80, alignItems: "center" }}>
@@ -287,23 +275,49 @@ const Drought = () => (
     </div>
 
     <div style={{ marginTop: 96 }}>
-      <SmallCap style={{ marginBottom: 20 }}>NCAA Tournament appearances since 2004</SmallCap>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 20, gap: 16, flexWrap: "wrap" }}>
+        <SmallCap>NCAA Tournament appearances since 2004</SmallCap>
+        <SmallCap style={{ color: "var(--scarlet)" }}>
+          <span style={{ display: "inline-block", width: 10, height: 10, background: "var(--scarlet)", marginRight: 8, verticalAlign: "middle" }}/>
+          Peevy era · 2020–present
+        </SmallCap>
+      </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(22, 1fr)", gap: 4, alignItems: "end" }}>
-        {Array.from({ length: 22 }, (_, i) => 2004 + i).map((y, i) => (
-          <div key={y} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
-            <div style={{
-              height: 36,
-              width: "100%",
-              background: "var(--ink-10)",
-              position: "relative",
-            }}>
-              <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "var(--ink-40)" }}>—</div>
+        {Array.from({ length: 22 }, (_, i) => 2004 + i).map((y, i) => {
+          const peevy = y >= 2020;
+          return (
+            <div key={y} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+              <div style={{
+                height: 36,
+                width: "100%",
+                background: peevy ? "oklch(0.92 0.07 28)" : "var(--ink-10)",
+                position: "relative",
+                borderTop: peevy ? "2px solid var(--scarlet)" : "none",
+              }}>
+                <div style={{
+                  position: "absolute",
+                  inset: 0,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: 11,
+                  color: peevy ? "var(--scarlet)" : "var(--ink-40)",
+                  fontWeight: peevy ? 700 : 400,
+                }}>0</div>
+              </div>
+              <div style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 9,
+                color: peevy ? "var(--scarlet)" : "var(--ink-40)",
+                fontVariantNumeric: "tabular-nums",
+                fontWeight: peevy ? 600 : 400,
+              }}>
+                {peevy || i % 3 === 0 ? `'${(y % 100).toString().padStart(2, '0')}` : ""}
+              </div>
             </div>
-            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: "var(--ink-40)", fontVariantNumeric: "tabular-nums" }}>
-              {i % 3 === 0 ? `'${(y % 100).toString().padStart(2, '0')}` : ""}
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   </section>
