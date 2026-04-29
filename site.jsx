@@ -73,18 +73,49 @@ const Hero = ({ signatures }) => (
             with DeWayne.
           </span>
         </h1>
-        <p style={{
-          fontFamily: "'Newsreader', serif",
-          fontSize: 22,
-          lineHeight: 1.5,
-          maxWidth: 580,
-          marginTop: 48,
-          color: "var(--ink-80)",
-        }}>
-          Six seasons. Zero NCAA Tournament appearances. One contract extension too many. We love this university — which is exactly why we're asking the Board of Trustees to reconsider.
-        </p>
+      </div>
 
-        <div style={{ display: "flex", gap: 16, marginTop: 48, alignItems: "center" }}>
+      <div>
+        <div style={{
+          aspectRatio: "3/4",
+          background: "var(--accent-tint)",
+          position: "relative",
+          overflow: "hidden",
+          borderRadius: 2,
+        }}>
+          <img
+            src="dewayne.webp"
+            alt="DeWayne Peevy"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "center 25%",
+              display: "block",
+              filter: "grayscale(1) contrast(1.05)",
+            }}
+          />
+          <div style={{
+            position: "absolute",
+            left: 24,
+            bottom: 24,
+            right: 24,
+            fontFamily: "'JetBrains Mono', monospace",
+            fontSize: 10,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "var(--ink-60)",
+            display: "flex",
+            justifyContent: "space-between",
+            background: "rgba(244, 239, 227, 0.85)",
+            padding: "8px 12px",
+          }}>
+            <span>Athletics Director</span>
+            <span>2020 — 2031*</span>
+          </div>
+        </div>
+
+        <div style={{ display: "flex", gap: 16, marginTop: 32, alignItems: "center", flexWrap: "wrap" }}>
           <a href="#petition" style={{
             background: "var(--ink)",
             color: "var(--paper)",
@@ -108,46 +139,18 @@ const Hero = ({ signatures }) => (
           }}>See the case</a>
         </div>
       </div>
-
-      <div style={{
-        aspectRatio: "3/4",
-        background: "var(--accent-tint)",
-        position: "relative",
-        overflow: "hidden",
-        borderRadius: 2,
-      }}>
-        <img
-          src="dewayne.webp"
-          alt="DeWayne Peevy"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            objectPosition: "center 25%",
-            display: "block",
-            filter: "grayscale(1) contrast(1.05)",
-          }}
-        />
-        <div style={{
-          position: "absolute",
-          left: 24,
-          bottom: 24,
-          right: 24,
-          fontFamily: "'JetBrains Mono', monospace",
-          fontSize: 10,
-          letterSpacing: "0.14em",
-          textTransform: "uppercase",
-          color: "var(--ink-60)",
-          display: "flex",
-          justifyContent: "space-between",
-          background: "rgba(244, 239, 227, 0.85)",
-          padding: "8px 12px",
-        }}>
-          <span>Athletics Director</span>
-          <span>2020 — 2031*</span>
-        </div>
-      </div>
     </div>
+
+    <p style={{
+      fontFamily: "'Newsreader', serif",
+      fontSize: 22,
+      lineHeight: 1.5,
+      maxWidth: 820,
+      marginTop: 64,
+      color: "var(--ink-80)",
+    }}>
+      Six seasons. Zero NCAA Tournament appearances. One contract extension too many. We love this university — which is exactly why we're asking the Board of Trustees to reconsider.
+    </p>
 
     <div style={{
       marginTop: 96,
