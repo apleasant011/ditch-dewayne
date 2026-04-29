@@ -56,7 +56,7 @@ const Hero = ({ signatures }) => (
       </nav>
     </div>
 
-    <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr", gap: 80, alignItems: "end" }}>
+    <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr", gap: 80, alignItems: "center" }}>
       <div>
         <SmallCap style={{ marginBottom: 32 }}>An open letter from Blue Demon Nation</SmallCap>
         <h1 style={{
@@ -116,16 +116,19 @@ const Hero = ({ signatures }) => (
         overflow: "hidden",
         borderRadius: 2,
       }}>
-        <svg viewBox="0 0 300 400" style={{ width: "100%", height: "100%", display: "block" }}>
-          <defs>
-            <pattern id="halftone" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
-              <circle cx="3" cy="3" r="1.1" fill="var(--accent-ink)" opacity="0.35"/>
-            </pattern>
-          </defs>
-          <path d="M 30 400 Q 30 290 90 270 Q 150 255 210 270 Q 270 290 270 400 Z" fill="url(#halftone)"/>
-          <ellipse cx="150" cy="170" rx="62" ry="78" fill="url(#halftone)"/>
-          <rect x="128" y="235" width="44" height="40" fill="url(#halftone)"/>
-        </svg>
+        <img
+          src="peevy.webp"
+          alt="DeWayne Peevy"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center 25%",
+            display: "block",
+            filter: "grayscale(1) contrast(1.05)",
+            mixBlendMode: "multiply",
+          }}
+        />
         <div style={{
           position: "absolute",
           left: 24,
@@ -138,6 +141,8 @@ const Hero = ({ signatures }) => (
           color: "var(--ink-60)",
           display: "flex",
           justifyContent: "space-between",
+          background: "rgba(244, 239, 227, 0.85)",
+          padding: "8px 12px",
         }}>
           <span>Athletics Director</span>
           <span>2020 — 2031*</span>
