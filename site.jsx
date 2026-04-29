@@ -36,7 +36,7 @@ const Hero = ({ signatures }) => (
   <section style={{ padding: "80px 64px 64px", maxWidth: 1240, margin: "0 auto" }}>
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 96 }}>
       <div style={{
-        fontFamily: "'Newsreader', serif",
+        fontFamily: "'EB Garamond', serif",
         fontSize: 18,
         fontStyle: "italic",
         color: "var(--ink-80)",
@@ -61,7 +61,7 @@ const Hero = ({ signatures }) => (
       <div>
         <SmallCap style={{ marginBottom: 32 }}>An open letter from Blue Demon Nation</SmallCap>
         <h1 style={{
-          fontFamily: "'Newsreader', serif",
+          fontFamily: "'EB Garamond', serif",
           fontWeight: 300,
           fontSize: "clamp(64px, 9vw, 132px)",
           lineHeight: 0.92,
@@ -143,7 +143,7 @@ const Hero = ({ signatures }) => (
     </div>
 
     <p style={{
-      fontFamily: "'Newsreader', serif",
+      fontFamily: "'EB Garamond', serif",
       fontSize: 22,
       lineHeight: 1.5,
       maxWidth: 820,
@@ -172,7 +172,7 @@ const Hero = ({ signatures }) => (
         }}>{signatures.toLocaleString()}</span>
         <SmallCap>Blue Demons have signed</SmallCap>
       </div>
-      <div style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", color: "var(--ink-60)", fontSize: 16 }}>
+      <div style={{ fontFamily: "'EB Garamond', serif", fontStyle: "italic", color: "var(--ink-60)", fontSize: 16 }}>
         Updated continuously · Goal: 10,000
       </div>
     </div>
@@ -193,7 +193,7 @@ const SaidVsSeen = () => {
     <section style={{ padding: "120px 64px", maxWidth: 1240, margin: "0 auto" }}>
       <SectionLabel num={1} label="Said vs. Seen" />
       <h2 style={{
-        fontFamily: "'Newsreader', serif",
+        fontFamily: "'EB Garamond', serif",
         fontWeight: 300,
         fontSize: "clamp(40px, 5.5vw, 76px)",
         letterSpacing: "-0.02em",
@@ -215,10 +215,10 @@ const SaidVsSeen = () => {
             <div style={{ padding: "28px 24px 28px 0", fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "var(--ink-60)", fontVariantNumeric: "tabular-nums" }}>
               0{i+1}
             </div>
-            <div style={{ padding: "28px 24px", fontFamily: "'Newsreader', serif", fontSize: 19, fontStyle: "italic", color: "var(--ink-80)", lineHeight: 1.45 }}>
+            <div style={{ padding: "28px 24px", fontFamily: "'EB Garamond', serif", fontSize: 19, fontStyle: "italic", color: "var(--ink-80)", lineHeight: 1.45 }}>
               {r.said}
             </div>
-            <div style={{ padding: "28px 24px", fontFamily: "'Newsreader', serif", fontSize: 19, color: "var(--ink)", lineHeight: 1.45 }}>
+            <div style={{ padding: "28px 24px", fontFamily: "'EB Garamond', serif", fontSize: 19, color: "var(--ink)", lineHeight: 1.45 }}>
               {r.seen}
             </div>
           </React.Fragment>
@@ -237,7 +237,7 @@ const Drought = () => (
     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
       <div>
         <div style={{
-          fontFamily: "'Newsreader', serif",
+          fontFamily: "'EB Garamond', serif",
           fontWeight: 200,
           fontSize: "clamp(180px, 26vw, 380px)",
           lineHeight: 0.85,
@@ -251,13 +251,13 @@ const Drought = () => (
       </div>
 
       <div style={{ paddingTop: 40 }}>
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 24, lineHeight: 1.5, color: "var(--ink)", margin: 0 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 24, lineHeight: 1.5, color: "var(--ink)", margin: 0 }}>
           That's the longest drought of any power-conference men's basketball program in the country.
         </p>
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 28 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 28 }}>
           The last tournament win came in 2004. To put that in perspective: the iPhone didn't exist. Mark Aguirre and Rod Strickland had already retired from the NBA. Most of this year's roster were in diapers — or hadn't been born yet.
         </p>
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 20 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 20 }}>
           Since joining the Big East in 2005–06, the Blue Demons have a conference record of roughly 22–265 — winning barely 20% of league games and finishing dead last eleven times. DeWayne Peevy was hired in August 2020 to fix it. Six seasons later, the drought is longer, not shorter.
         </p>
 
@@ -268,7 +268,7 @@ const Drought = () => (
           background: "var(--accent-tint)",
         }}>
           <blockquote style={{
-            fontFamily: "'Newsreader', serif",
+            fontFamily: "'EB Garamond', serif",
             fontSize: 22,
             fontStyle: "italic",
             lineHeight: 1.45,
@@ -281,7 +281,7 @@ const Drought = () => (
             — DeWayne Peevy, August 2020
           </figcaption>
         </figure>
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 17, fontStyle: "italic", lineHeight: 1.55, color: "var(--ink-60)", marginTop: 24 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 17, fontStyle: "italic", lineHeight: 1.55, color: "var(--ink-60)", marginTop: 24 }}>
           He was right. He just didn't realize he'd be the one presiding over the drought he warned about.
         </p>
       </div>
@@ -328,7 +328,7 @@ const Headlines = () => {
       <div style={{ maxWidth: 1240, margin: "0 auto" }}>
         <SectionLabel num={3} label="In the press" />
         <h2 style={{
-          fontFamily: "'Newsreader', serif",
+          fontFamily: "'EB Garamond', serif",
           fontWeight: 300,
           fontSize: "clamp(40px, 5.5vw, 76px)",
           letterSpacing: "-0.02em",
@@ -338,7 +338,7 @@ const Headlines = () => {
         }}>
           The national press <span style={{ fontStyle: "italic", color: "var(--accent-ink)" }}>has noticed.</span>
         </h2>
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, color: "var(--ink-80)", maxWidth: 640, margin: "0 0 64px", lineHeight: 1.5 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, color: "var(--ink-80)", maxWidth: 640, margin: "0 0 64px", lineHeight: 1.5 }}>
           A small sampling of how the sports world has come to describe Blue Demons athletics over the last six seasons.
         </p>
 
@@ -365,7 +365,7 @@ const Headlines = () => {
                 <span style={{ color: "var(--ink-40)" }}>{t.date}</span>
               </div>
               <div style={{
-                fontFamily: "'Newsreader', serif",
+                fontFamily: "'EB Garamond', serif",
                 fontSize: 20,
                 lineHeight: 1.3,
                 color: "var(--ink)",
@@ -378,7 +378,7 @@ const Headlines = () => {
         </div>
 
         <p style={{
-          fontFamily: "'Newsreader', serif",
+          fontFamily: "'EB Garamond', serif",
           fontStyle: "italic",
           fontSize: 22,
           lineHeight: 1.5,
@@ -407,7 +407,7 @@ const EmptyArena = () => {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
         <div>
           <h2 style={{
-            fontFamily: "'Newsreader', serif",
+            fontFamily: "'EB Garamond', serif",
             fontWeight: 300,
             fontSize: "clamp(40px, 5vw, 68px)",
             letterSpacing: "-0.02em",
@@ -416,10 +416,10 @@ const EmptyArena = () => {
           }}>
             A $175 million arena. <span style={{ fontStyle: "italic", color: "var(--accent-ink)" }}>And no one came.</span>
           </h2>
-          <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 32 }}>
+          <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 32 }}>
             Wintrust Arena seats 10,387, built in part with taxpayer money to be a downtown showcase. Under Peevy, men's basketball has averaged roughly 4,045 fans per game — under 40% of capacity. Several games have drawn fewer than 1,000 turnstile entries.
           </p>
-          <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 16 }}>
+          <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 16 }}>
             In six seasons at Wintrust, exactly one men's game has sold out — and even that one only reached 75% capacity.
           </p>
 
@@ -492,7 +492,7 @@ const TrendTable = () => {
       <div style={{ maxWidth: 1240, margin: "0 auto" }}>
         <SectionLabel num={5} label="Year by year" />
         <h2 style={{
-          fontFamily: "'Newsreader', serif",
+          fontFamily: "'EB Garamond', serif",
           fontWeight: 300,
           fontSize: "clamp(40px, 5vw, 68px)",
           letterSpacing: "-0.02em",
@@ -502,7 +502,7 @@ const TrendTable = () => {
         }}>
           Six years in. <span style={{ fontStyle: "italic", color: "var(--accent-ink)" }}>The curve hasn't moved.</span>
         </h2>
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, color: "var(--ink-80)", maxWidth: 640, margin: "0 0 64px", lineHeight: 1.5 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, color: "var(--ink-80)", maxWidth: 640, margin: "0 0 64px", lineHeight: 1.5 }}>
           Peevy's tenure, season by season. You decide whether this looks like progress.
         </p>
 
@@ -527,7 +527,7 @@ const TrendTable = () => {
               marginInline: r.flag ? -16 : 0,
               paddingInline: r.flag ? 16 : 0,
             }}>
-              <div style={{ fontFamily: "'Newsreader', serif", fontSize: 19, color: "var(--ink)", display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, color: "var(--ink)", display: "flex", alignItems: "center", gap: 10 }}>
                 {r.season}
                 {r.flag && <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.1em", color: "var(--accent-ink)", textTransform: "uppercase" }}>Record low</span>}
               </div>
@@ -545,7 +545,7 @@ const TrendTable = () => {
           ))}
         </div>
 
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.6, color: "var(--ink-80)", marginTop: 48, maxWidth: 820 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.6, color: "var(--ink-80)", marginTop: 48, maxWidth: 820 }}>
           Six seasons. One winning record. Zero NCAA Tournament bids. One historically catastrophic 0–20 conference season that broke a 40-year league record for futility. <em>These are the seasons that came before the contract extension through 2031.</em>
         </p>
 
@@ -562,10 +562,10 @@ const TrendTable = () => {
 const BeyondCard = ({ title, sub, body }) => (
   <div style={{ background: "var(--paper)", padding: "28px 28px 32px", borderTop: "1px solid var(--ink)" }}>
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 14 }}>
-      <div style={{ fontFamily: "'Newsreader', serif", fontSize: 22, fontWeight: 500 }}>{title}</div>
+      <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 22, fontWeight: 500 }}>{title}</div>
       {sub && <SmallCap>{sub}</SmallCap>}
     </div>
-    <div style={{ fontFamily: "'Newsreader', serif", fontSize: 16, lineHeight: 1.55, color: "var(--ink-80)" }}>{body}</div>
+    <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 16, lineHeight: 1.55, color: "var(--ink-80)" }}>{body}</div>
   </div>
 );
 
@@ -582,7 +582,7 @@ const Rewarded = () => {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
         <div>
           <h2 style={{
-            fontFamily: "'Newsreader', serif",
+            fontFamily: "'EB Garamond', serif",
             fontWeight: 300,
             fontSize: "clamp(40px, 5vw, 68px)",
             letterSpacing: "-0.02em",
@@ -591,10 +591,10 @@ const Rewarded = () => {
           }}>
             And the reward <span style={{ fontStyle: "italic", color: "var(--accent-ink)" }}>for all of this?</span>
           </h2>
-          <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 32 }}>
+          <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 32 }}>
             On March 23, 2026 — weeks after another mediocre season ended without an NCAA bid — the Board of Trustees gave DeWayne Peevy a contract extension through <strong>2031</strong>. His second extension in three years. He was also promoted to <em>Senior Vice President</em>.
           </p>
-          <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 16 }}>
+          <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 16 }}>
             We can't think of another industry where a leader oversees record-breaking failure and is rewarded with longer contracts and bigger titles. We don't think the Board is hearing from the people who care most. This site is one way to fix that.
           </p>
         </div>
@@ -605,7 +605,7 @@ const Rewarded = () => {
           borderTop: "2px solid var(--accent-ink)",
         }}>
           <SmallCap style={{ marginBottom: 12, color: "var(--accent-ink)" }}>Press release · March 23, 2026</SmallCap>
-          <div style={{ fontFamily: "'Newsreader', serif", fontSize: 24, lineHeight: 1.3, color: "var(--ink)", fontWeight: 500 }}>
+          <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 24, lineHeight: 1.3, color: "var(--ink)", fontWeight: 500 }}>
             "DePaul University extends Athletics Director DeWayne Peevy through 2031, names him Senior Vice President."
           </div>
           <div style={{
@@ -630,7 +630,7 @@ const Rewarded = () => {
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr 1fr 1fr", gap: 32, alignItems: "end" }}>
           <div>
-            <div style={{ fontFamily: "'Newsreader', serif", fontSize: 20, fontStyle: "italic", color: "var(--ink-80)", marginBottom: 16 }}>
+            <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 20, fontStyle: "italic", color: "var(--ink-80)", marginBottom: 16 }}>
               Estimated annual salary
             </div>
             <input type="range" min="500000" max="1500000" step="25000" value={salary} onChange={e => setSalary(+e.target.value)}
@@ -643,7 +643,7 @@ const Rewarded = () => {
           <Stat big={beWins.toString()} label="Big East wins, 6 yrs" />
           <Stat big={`$${perWin.toLocaleString()}`} label="Cost per conference win" accent />
         </div>
-        <p style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontSize: 14, color: "var(--ink-60)", marginTop: 24 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontStyle: "italic", fontSize: 14, color: "var(--ink-60)", marginTop: 24 }}>
           Salary figure is an estimate; the university has not publicly disclosed compensation. Big East wins reflect 2020–26 men's basketball.
         </p>
       </div>
@@ -665,14 +665,14 @@ const Precedent = () => (
         boxShadow: "0 24px 48px -24px rgba(0,0,0,0.18)",
       }}>
         <div style={{ position: "absolute", top: 24, left: 32, right: 32, display: "flex", justifyContent: "space-between" }}>
-          <div style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontSize: 12 }}>Chicago Sun-Times</div>
+          <div style={{ fontFamily: "'EB Garamond', serif", fontStyle: "italic", fontSize: 12 }}>Chicago Sun-Times</div>
           <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "var(--ink-60)" }}>March 2018 · Page 14</div>
         </div>
         <div style={{ position: "absolute", top: 64, left: 32, right: 32, bottom: 32, border: "1px solid var(--ink-30)", padding: 24, display: "flex", flexDirection: "column" }}>
-          <div style={{ fontFamily: "'Newsreader', serif", fontWeight: 600, fontSize: 28, lineHeight: 1.05, marginBottom: 16 }}>
+          <div style={{ fontFamily: "'EB Garamond', serif", fontWeight: 600, fontSize: 28, lineHeight: 1.05, marginBottom: 16 }}>
             An open letter to DePaul University.
           </div>
-          <div style={{ fontFamily: "'Newsreader', serif", fontSize: 12, lineHeight: 1.5, color: "var(--ink-80)", flex: 1 }}>
+          <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 12, lineHeight: 1.5, color: "var(--ink-80)", flex: 1 }}>
             <p>We, concerned alumni and students, call for a change in the leadership of DePaul Athletics. The current Athletics Director has been the common thread in our continued struggles…</p>
             <p style={{ marginTop: 10 }}>The Blue Demons deserve more than excuses. We deserve a path back to relevance — and accountability when that path is not delivered.</p>
             <p style={{ marginTop: 10, fontStyle: "italic" }}>— Concerned Students &amp; Alumni of DePaul University</p>
@@ -682,7 +682,7 @@ const Precedent = () => (
 
       <div>
         <h2 style={{
-          fontFamily: "'Newsreader', serif",
+          fontFamily: "'EB Garamond', serif",
           fontWeight: 300,
           fontSize: "clamp(40px, 5vw, 68px)",
           letterSpacing: "-0.02em",
@@ -691,13 +691,13 @@ const Precedent = () => (
         }}>
           This worked once before. <span style={{ fontStyle: "italic", color: "var(--accent-ink)" }}>It can work again.</span>
         </h2>
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 32 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 32 }}>
           In March 2018, a group of concerned students and alumni purchased a full-page ad in the <em>Chicago Sun-Times</em> calling for a change in athletic department leadership. They called the AD "the common thread."
         </p>
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 16 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.65, color: "var(--ink-80)", marginTop: 16 }}>
           Two years later, there was a change.
         </p>
-        <p style={{ fontFamily: "'Newsreader', serif", fontSize: 22, fontStyle: "italic", color: "var(--ink)", marginTop: 32, lineHeight: 1.4 }}>
+        <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 22, fontStyle: "italic", color: "var(--ink)", marginTop: 32, lineHeight: 1.4 }}>
           Blue Demon Nation has done this before. We can do it again — politely, publicly, and on the record.
         </p>
       </div>
@@ -748,16 +748,16 @@ const Petition = ({ onSign, signed, signedName }) => {
               textAlign: "center",
               lineHeight: 1.3,
             }}>
-              <div style={{ fontFamily: "'Newsreader', serif", fontSize: 18, fontStyle: "italic", letterSpacing: 0, textTransform: "none", marginBottom: 2 }}>Enough</div>
+              <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 18, fontStyle: "italic", letterSpacing: 0, textTransform: "none", marginBottom: 2 }}>Enough</div>
               <div>Blue Demon<br/>Nation · 2026</div>
             </div>
 
             <SmallCap style={{ marginBottom: 24 }}>An open letter</SmallCap>
-            <div style={{ fontFamily: "'Newsreader', serif", fontSize: 16, color: "var(--ink-60)", marginBottom: 20 }}>
+            <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 16, color: "var(--ink-60)", marginBottom: 20 }}>
               <strong style={{ color: "var(--ink)", fontWeight: 600 }}>To:</strong> President Robert L. Manuel<br/>
               and the DePaul University Board of Trustees
             </div>
-            <div style={{ fontFamily: "'Newsreader', serif", fontSize: 17, lineHeight: 1.6, color: "var(--ink-80)", maxWidth: 480 }}>
+            <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 17, lineHeight: 1.6, color: "var(--ink-80)", maxWidth: 480 }}>
               <p style={{ margin: 0 }}>
                 We — the undersigned alumni, students, donors, season-ticket holders, and fans — formally call for a change in leadership at DePaul Athletics, and ask that the university part ways with DeWayne Peevy as Senior Vice President and Director of Athletics.
               </p>
@@ -781,7 +781,7 @@ const Petition = ({ onSign, signed, signedName }) => {
           {!signed ? (
             <form onSubmit={submit} style={{ display: "flex", flexDirection: "column", gap: 18 }}>
               <h2 style={{
-                fontFamily: "'Newsreader', serif",
+                fontFamily: "'EB Garamond', serif",
                 fontWeight: 300,
                 fontSize: "clamp(36px, 4vw, 56px)",
                 letterSpacing: "-0.02em",
@@ -790,7 +790,7 @@ const Petition = ({ onSign, signed, signedName }) => {
               }}>
                 Add your name.
               </h2>
-              <p style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", color: "var(--ink-60)", margin: "0 0 16px", fontSize: 17 }}>
+              <p style={{ fontFamily: "'EB Garamond', serif", fontStyle: "italic", color: "var(--ink-60)", margin: "0 0 16px", fontSize: 17 }}>
                 Signatures will be presented to the Office of the President, the Board of Trustees, and shared with Chicago media.
               </p>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
@@ -820,17 +820,17 @@ const Petition = ({ onSign, signed, signedName }) => {
               }}>
                 Add my name →
               </button>
-              <p style={{ fontFamily: "'Newsreader', serif", fontSize: 13, fontStyle: "italic", color: "var(--ink-60)", margin: 0 }}>
+              <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 13, fontStyle: "italic", color: "var(--ink-60)", margin: 0 }}>
                 We'll never share your email. One signature per person.
               </p>
             </form>
           ) : (
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
               <SmallCap style={{ color: "var(--accent-ink)", marginBottom: 16 }}>✓ Signature received</SmallCap>
-              <h2 style={{ fontFamily: "'Newsreader', serif", fontWeight: 300, fontSize: 56, lineHeight: 1, margin: "0 0 24px", letterSpacing: "-0.02em" }}>
+              <h2 style={{ fontFamily: "'EB Garamond', serif", fontWeight: 300, fontSize: 56, lineHeight: 1, margin: "0 0 24px", letterSpacing: "-0.02em" }}>
                 Thank you, <span style={{ fontStyle: "italic", color: "var(--accent-ink)" }}>{signedName}.</span>
               </h2>
-              <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, lineHeight: 1.55, color: "var(--ink-80)", margin: 0 }}>
+              <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, lineHeight: 1.55, color: "var(--ink-80)", margin: 0 }}>
                 Your name has been added to the open letter. Help amplify it — share with one other Blue Demon who'd want to sign.
               </p>
               <div style={{ display: "flex", gap: 12, marginTop: 32, flexWrap: "wrap" }}>
@@ -882,7 +882,7 @@ const inputStyle = {
   border: "1px solid var(--ink-20)",
   borderBottom: "1px solid var(--ink)",
   padding: "12px 14px",
-  fontFamily: "'Newsreader', serif",
+  fontFamily: "'EB Garamond', serif",
   fontSize: 17,
   color: "var(--ink)",
   borderRadius: 2,
@@ -907,7 +907,7 @@ const Wall = ({ extras }) => {
     <section style={{ padding: "120px 64px", maxWidth: 1240, margin: "0 auto" }}>
       <SectionLabel num={9} label="The wall" />
       <h2 style={{
-        fontFamily: "'Newsreader', serif",
+        fontFamily: "'EB Garamond', serif",
         fontWeight: 300,
         fontSize: "clamp(40px, 5vw, 68px)",
         letterSpacing: "-0.02em",
@@ -917,7 +917,7 @@ const Wall = ({ extras }) => {
       }}>
         In their <span style={{ fontStyle: "italic", color: "var(--accent-ink)" }}>own words.</span>
       </h2>
-      <p style={{ fontFamily: "'Newsreader', serif", fontSize: 19, color: "var(--ink-80)", maxWidth: 640, margin: "0 0 48px", lineHeight: 1.5 }}>
+      <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 19, color: "var(--ink-80)", maxWidth: 640, margin: "0 0 48px", lineHeight: 1.5 }}>
         A few of the reasons people are signing. Updated as new signatures arrive.
       </p>
 
@@ -930,7 +930,7 @@ const Wall = ({ extras }) => {
             background: i % 4 === 1 ? "var(--accent-tint)" : "var(--paper-warm)",
             borderTop: "1px solid var(--ink)",
           }}>
-            <div style={{ fontFamily: "'Newsreader', serif", fontSize: 18, lineHeight: 1.5, fontStyle: "italic", color: "var(--ink)" }}>
+            <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 18, lineHeight: 1.5, fontStyle: "italic", color: "var(--ink)" }}>
               "{q.text}"
             </div>
             <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-60)", marginTop: 16 }}>
@@ -950,23 +950,23 @@ const Footer = ({ signatures }) => (
     <div style={{ maxWidth: 1240, margin: "0 auto" }}>
       <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr", gap: 48, alignItems: "start" }}>
         <div>
-          <div style={{ fontFamily: "'Newsreader', serif", fontSize: 32, fontStyle: "italic", lineHeight: 1.1 }}>
+          <div style={{ fontFamily: "'EB Garamond', serif", fontSize: 32, fontStyle: "italic", lineHeight: 1.1 }}>
             Built by Blue Demons.<br/>For Blue Demons.
           </div>
-          <p style={{ fontFamily: "'Newsreader', serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 28, maxWidth: 460, lineHeight: 1.55 }}>
+          <p style={{ fontFamily: "'EB Garamond', serif", fontSize: 14, color: "rgba(255,255,255,0.6)", marginTop: 28, maxWidth: 460, lineHeight: 1.55 }}>
             DitchDeWayne.com is an independent grassroots effort by alumni, students, and fans of DePaul University Athletics. It is not affiliated with DePaul University, the Big East Conference, or any official organization. All cited statistics are publicly available.
           </p>
         </div>
         <div>
           <SmallCap style={{ color: "rgba(255,255,255,0.5)", marginBottom: 14 }}>Read</SmallCap>
           {["The case", "By the numbers", "The petition", "The wall"].map(s => (
-            <div key={s} style={{ fontFamily: "'Newsreader', serif", fontSize: 16, color: "rgba(255,255,255,0.85)", marginBottom: 8 }}>{s}</div>
+            <div key={s} style={{ fontFamily: "'EB Garamond', serif", fontSize: 16, color: "rgba(255,255,255,0.85)", marginBottom: 8 }}>{s}</div>
           ))}
         </div>
         <div>
           <SmallCap style={{ color: "rgba(255,255,255,0.5)", marginBottom: 14 }}>Share</SmallCap>
           {["X / Twitter", "Facebook", "Copy link", "Email"].map(s => (
-            <div key={s} style={{ fontFamily: "'Newsreader', serif", fontSize: 16, color: "rgba(255,255,255,0.85)", marginBottom: 8 }}>{s}</div>
+            <div key={s} style={{ fontFamily: "'EB Garamond', serif", fontSize: 16, color: "rgba(255,255,255,0.85)", marginBottom: 8 }}>{s}</div>
           ))}
         </div>
       </div>
