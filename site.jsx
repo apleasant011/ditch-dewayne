@@ -33,7 +33,7 @@ const SectionLabel = ({ num, label }) => (
 /* ---------- Hero ---------- */
 
 const Hero = ({ signatures }) => (
-  <section style={{ padding: "80px 64px 64px", maxWidth: 1240, margin: "0 auto" }}>
+  <section style={{ padding: "40px 64px 48px", maxWidth: 1240, margin: "0 auto" }}>
     <div style={{ marginBottom: 24 }}>
       <div style={{
         fontFamily: "'EB Garamond', serif",
@@ -177,7 +177,7 @@ const SaidVsSeen = () => {
     { said: "The \u201CDream Big\u201D Strategic Plan.", seen: "Empty seats, fired coaches, a 22-year tournament drought." },
   ];
   return (
-    <section style={{ padding: "120px 64px", maxWidth: 1240, margin: "0 auto" }}>
+    <section style={{ padding: "72px 64px", maxWidth: 1240, margin: "0 auto" }}>
       <SectionLabel num={1} label="Said vs. Seen" />
       <h2 style={{
         fontFamily: "'EB Garamond', serif",
@@ -219,7 +219,7 @@ const SaidVsSeen = () => {
 /* ---------- Section 2 — 22 Years ---------- */
 
 const Drought = () => (
-  <section id="case" style={{ padding: "120px 64px", maxWidth: 1240, margin: "0 auto" }}>
+  <section id="case" style={{ padding: "72px 64px", maxWidth: 1240, margin: "0 auto" }}>
     <SectionLabel num={2} label="The drought" />
     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
       <div>
@@ -337,7 +337,7 @@ const Headlines = () => {
     { outlet: "Anonymous Eagle", date: "Jul 2025", text: "Step #1 was 'don't be a national joke again.' They didn't quite get there.", rotate: 2 },
   ];
   return (
-    <section style={{ padding: "120px 64px", background: "var(--paper-warm)" }}>
+    <section style={{ padding: "72px 64px", background: "var(--paper-warm)" }}>
       <div style={{ maxWidth: 1240, margin: "0 auto" }}>
         <SectionLabel num={3} label="In the press" />
         <h2 style={{
@@ -415,7 +415,7 @@ const EmptyArena = () => {
   const total = 240;
   const filled = Math.round(total * 0.39);
   return (
-    <section style={{ padding: "120px 64px", maxWidth: 1240, margin: "0 auto" }}>
+    <section style={{ padding: "72px 64px", maxWidth: 1240, margin: "0 auto" }}>
       <SectionLabel num={4} label="Attendance" />
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
         <div>
@@ -501,7 +501,7 @@ const TrendTable = () => {
     { season: "2025–26", overall: "16–16", be: "8–12", finish: "6th", ncaa: "—" },
   ];
   return (
-    <section style={{ padding: "120px 64px", background: "var(--paper-warm)" }}>
+    <section style={{ padding: "72px 64px", background: "var(--paper-warm)" }}>
       <div style={{ maxWidth: 1240, margin: "0 auto" }}>
         <SectionLabel num={5} label="Year by year" />
         <h2 style={{
@@ -590,7 +590,7 @@ const Rewarded = () => {
   const total = salary * 6;
   const perWin = Math.round(total / beWins);
   return (
-    <section style={{ padding: "120px 64px", maxWidth: 1240, margin: "0 auto" }}>
+    <section style={{ padding: "72px 64px", maxWidth: 1240, margin: "0 auto" }}>
       <SectionLabel num={6} label="The extension" />
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
         <div>
@@ -667,7 +667,7 @@ const Rewarded = () => {
 /* ---------- Section 7 — Precedent ---------- */
 
 const Precedent = () => (
-  <section style={{ padding: "120px 64px", maxWidth: 1240, margin: "0 auto" }}>
+  <section style={{ padding: "72px 64px", maxWidth: 1240, margin: "0 auto" }}>
     <SectionLabel num={7} label="The precedent" />
     <div style={{ display: "grid", gridTemplateColumns: "1fr 1.3fr", gap: 64, alignItems: "center" }}>
       <div style={{
@@ -730,7 +730,7 @@ const Petition = ({ onSign, signed, signedName }) => {
   };
 
   return (
-    <section id="petition" style={{ padding: "120px 64px", background: "var(--paper-warm)" }}>
+    <section id="petition" style={{ padding: "72px 64px", background: "var(--paper-warm)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <SectionLabel num={8} label="The petition" />
         <div style={{ display: "flex", flexDirection: "column", gap: 64 }}>
@@ -921,7 +921,7 @@ const Wall = ({ extras }) => {
   ];
   const all = [...extras, ...seed];
   return (
-    <section style={{ padding: "120px 64px", maxWidth: 1240, margin: "0 auto" }}>
+    <section style={{ padding: "72px 64px", maxWidth: 1240, margin: "0 auto" }}>
       <SectionLabel num={9} label="The wall" />
       <h2 style={{
         fontFamily: "'EB Garamond', serif",
@@ -963,7 +963,7 @@ const Wall = ({ extras }) => {
 /* ---------- Footer ---------- */
 
 const Footer = ({ signatures }) => (
-  <footer style={{ padding: "80px 64px 56px", background: "var(--ink)", color: "var(--paper)" }}>
+  <footer style={{ padding: "56px 64px 40px", background: "var(--ink)", color: "var(--paper)" }}>
     <div style={{ maxWidth: 1240, margin: "0 auto" }}>
       <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr", gap: 48, alignItems: "start" }}>
         <div>
