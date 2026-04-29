@@ -117,7 +117,7 @@ const Hero = ({ signatures }) => (
         borderRadius: 2,
       }}>
         <img
-          src="peevy.webp"
+          src="dewayne.webp"
           alt="DeWayne Peevy"
           style={{
             width: "100%",
@@ -125,6 +125,7 @@ const Hero = ({ signatures }) => (
             objectFit: "cover",
             objectPosition: "center 25%",
             display: "block",
+            filter: "grayscale(1) contrast(1.05)",
           }}
         />
         <div style={{
