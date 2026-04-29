@@ -62,6 +62,15 @@
     [style*="grid-template-columns: auto 1fr 1fr"] {
       grid-template-columns: 1fr !important;
     }
+    /* Said vs. Seen — promise (col 2) in demon blue, reality (col 3) in scarlet */
+    [style*="grid-template-columns: auto 1fr 1fr"] > *:nth-child(4n+2),
+    [style*="grid-template-columns: auto 1fr 1fr"] > *:nth-child(4n+2) * {
+      color: var(--accent-ink) !important;
+    }
+    [style*="grid-template-columns: auto 1fr 1fr"] > *:nth-child(4n+3),
+    [style*="grid-template-columns: auto 1fr 1fr"] > *:nth-child(4n+3) * {
+      color: var(--scarlet) !important;
+    }
 
     /* Petition affiliation/year/zip 3-col → stacked pair */
     [style*="grid-template-columns: 1.4fr 1fr 1fr"] {
