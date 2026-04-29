@@ -719,7 +719,7 @@ const Petition = ({ onSign, signed, signedName }) => {
     <section id="petition" style={{ padding: "120px 64px", background: "var(--paper-warm)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <SectionLabel num={8} label="The petition" />
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 64 }}>
           <div style={{
             background: "var(--paper)",
             padding: "48px 48px 56px",
