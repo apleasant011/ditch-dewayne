@@ -148,7 +148,7 @@ const SectionLabel = ({ num, label }) => (
       fontWeight: 900,
       fontSize: 14,
       borderRadius: 4,
-    }}>{num.toString().padStart(2, "0")}</span>
+    }} className="dn-section-label-num">{num.toString().padStart(2, "0")}</span>
     <Eyebrow color={ROYAL}>{label}</Eyebrow>
   </div>
 );
@@ -243,14 +243,14 @@ const TopNav = () => {
 /* ---------- Hero (full-bleed, photo-driven) ---------- */
 
 const Hero = ({ signatures }) => (
-  <section id="top" style={{
+  <section id="top" className="dn-hero" style={{
     position: "relative",
     background: ROYAL,
     color: "#fff",
     overflow: "hidden",
   }}>
     {/* Diagonal scarlet wedge accent */}
-    <div style={{
+    <div className="dn-hero-wedge" style={{
       position: "absolute",
       top: 0,
       right: 0,
@@ -260,7 +260,7 @@ const Hero = ({ signatures }) => (
       clipPath: "polygon(20% 0, 100% 0, 100% 100%, 0 100%)",
       opacity: 0.95,
     }}/>
-    <div className="dn-hero-pad" style={{
+    <div className="dn-hero-pad dn-hero-grid" style={{
       position: "relative",
       maxWidth: 1280,
       margin: "0 auto",
@@ -285,7 +285,7 @@ const Hero = ({ signatures }) => (
         }}>
           Six seasons. Zero NCAA Tournament appearances. One contract extension too many. We love this university — which is exactly why we're asking the Board of Trustees to reconsider.
         </p>
-        <div style={{ display: "flex", gap: 16, marginTop: 40, flexWrap: "wrap" }}>
+        <div className="dn-hero-buttons" style={{ display: "flex", gap: 16, marginTop: 40, flexWrap: "wrap" }}>
           <Button href="#petition">Sign the Petition</Button>
           <Button href="#case" variant="ghost">See the Case</Button>
         </div>
@@ -320,7 +320,7 @@ const Hero = ({ signatures }) => (
       </div>
 
       <div style={{ position: "relative", zIndex: 2 }}>
-        <div style={{
+        <div className="dn-hero-img" style={{
           aspectRatio: "3/4",
           background: "rgba(0,0,0,0.2)",
           position: "relative",
@@ -386,7 +386,7 @@ const SaidVsSeen = () => {
         </Lead>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 0, border: `1px solid ${BORDER}`, borderRadius: 6, overflow: "hidden" }}>
-          <div style={{
+          <div className="dn-said-head" style={{
             display: "grid",
             gridTemplateColumns: "80px 1fr 1fr",
             background: ROYAL,
@@ -436,7 +436,7 @@ const Drought = () => (
       <SectionLabel num={2} label="The Drought" />
       <div className="dn-grid-2" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "start" }}>
         <div>
-          <div style={{
+          <div className="dn-22" style={{
             fontFamily: "'Montserrat', sans-serif",
             fontWeight: 900,
             fontSize: "clamp(160px, 24vw, 340px)",
@@ -498,7 +498,7 @@ const Drought = () => (
             const peevy = y >= 2020;
             return (
               <div key={y} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
-                <div style={{
+                <div className="dn-bar-cell" style={{
                   height: 44,
                   width: "100%",
                   background: peevy ? SCARLET : SAND_DEEP,
@@ -512,7 +512,7 @@ const Drought = () => (
                   fontSize: 12,
                   color: peevy ? "#fff" : "#9CA3AF",
                 }}>0</div>
-                <div style={{
+                <div className="dn-bar-label" style={{
                   fontFamily: "'Montserrat', sans-serif",
                   fontSize: 9,
                   fontWeight: 600,
@@ -560,7 +560,7 @@ const Headlines = () => {
           gap: 24,
         }}>
           {tiles.map((t, i) => (
-            <article key={i} className="dn-card" style={{
+            <article key={i} className="dn-card dn-headline-card" style={{
               background: "#fff",
               padding: "26px 28px 28px",
               borderTop: `4px solid ${SCARLET}`,
@@ -664,7 +664,7 @@ const EmptyArena = () => {
 
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <Eyebrow color={ROYAL} style={{ marginBottom: 16 }}>One night at Wintrust, to scale</Eyebrow>
-            <div style={{
+            <div className="dn-dot-grid" style={{
               display: "grid",
               gridTemplateColumns: "repeat(20, 1fr)",
               gap: 4,
@@ -829,7 +829,7 @@ const Rewarded = () => {
             </Body>
           </div>
 
-          <div style={{
+          <div className="dn-rewarded-card" style={{
             padding: "36px 36px 40px",
             background: ROYAL,
             color: "#fff",
@@ -858,7 +858,7 @@ const Rewarded = () => {
           </div>
         </div>
 
-        <div style={{
+        <div className="dn-cost-wrap" style={{
           marginTop: 80,
           padding: "44px 48px 52px",
           background: "#fff",
@@ -908,7 +908,7 @@ const Precedent = () => (
     <div className="dn-wrap">
       <SectionLabel num={7} label="The Precedent" />
       <div className="dn-grid-asym" style={{ display: "grid", gridTemplateColumns: "1fr 1.3fr", gap: 56, alignItems: "center" }}>
-        <div style={{
+        <div className="dn-precedent-card" style={{
           background: SAND,
           aspectRatio: "0.72/1",
           padding: 28,
@@ -921,7 +921,7 @@ const Precedent = () => (
             <div style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 800, fontSize: 12, color: ROYAL, letterSpacing: "0.04em", textTransform: "uppercase" }}>Chicago Sun-Times</div>
             <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: 10, color: MUTED, fontWeight: 600 }}>March 2018 · Page 14</div>
           </div>
-          <div style={{ position: "absolute", top: 56, left: 28, right: 28, bottom: 28, border: `1px solid ${BORDER}`, padding: 22, display: "flex", flexDirection: "column", background: "#fff", borderRadius: 4 }}>
+          <div className="dn-precedent-inner" style={{ position: "absolute", top: 56, left: 28, right: 28, bottom: 28, border: `1px solid ${BORDER}`, padding: 22, display: "flex", flexDirection: "column", background: "#fff", borderRadius: 4 }}>
             <div style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 900, fontSize: 26, lineHeight: 1.05, marginBottom: 16, color: ROYAL, textTransform: "uppercase", letterSpacing: "-0.02em" }}>
               An open letter to DePaul University.
             </div>
@@ -989,7 +989,7 @@ const Petition = ({ onSign, signed, signedName }) => {
             boxShadow: "0 24px 64px -32px rgba(0,33,67,0.25)",
             border: `1px solid ${BORDER}`,
           }}>
-            <div style={{
+            <div className="dn-petition-seal" style={{
               position: "absolute",
               right: 24,
               top: 24,
@@ -1039,7 +1039,7 @@ const Petition = ({ onSign, signed, signedName }) => {
           </div>
 
           {!signed ? (
-            <form onSubmit={submit} style={{
+            <form onSubmit={submit} className="dn-form" style={{
               display: "flex",
               flexDirection: "column",
               gap: 18,
@@ -1192,7 +1192,7 @@ const Wall = ({ extras }) => {
 /* ---------- Footer ---------- */
 
 const Footer = ({ signatures }) => (
-  <footer style={{ padding: "72px 64px 40px", background: ROYAL_DARK, color: "#fff" }}>
+  <footer className="dn-footer" style={{ padding: "72px 64px 40px", background: ROYAL_DARK, color: "#fff" }}>
     <div style={{ maxWidth: 1240, margin: "0 auto" }}>
       <div className="dn-footer-grid" style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr 1fr 1fr", gap: 48, alignItems: "start" }}>
         <div>
