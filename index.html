@@ -10,149 +10,82 @@
 <meta property="og:type" content="website"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
   body {
-    font-family: 'EB Garamond', Georgia, serif;
+    font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    color: #1F2937;
+    background: #fff;
   }
   a { color: inherit; }
-  ::selection { background: oklch(0.42 0.10 250 / 0.2); }
-  input, select, textarea { font-family: 'EB Garamond', Georgia, serif; }
-  input:focus, select:focus, textarea:focus { border-color: oklch(0.22 0.01 60) !important; }
+  button { font-family: inherit; }
+  input, select, textarea { font-family: 'Inter', sans-serif; }
+  ::selection { background: rgba(237, 28, 36, 0.18); }
+
+  /* Section base */
+  .dn-section { padding: 96px 64px; }
+  .dn-section .dn-wrap { max-width: 1240px; margin: 0 auto; }
+
+  /* Sticky nav burger toggle */
+  .dn-burger { display: none; }
+
+  /* Buttons hover */
+  .dn-btn-primary:hover { background: #C41722 !important; }
+  .dn-btn-navy:hover { background: #061829 !important; }
+  .dn-btn-outline:hover { background: #0A2540 !important; color: #fff !important; }
+
+  /* Card hover lift */
+  .dn-card { transition: transform .15s ease, box-shadow .15s ease; }
+  .dn-card:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -20px rgba(10,37,64,0.25); }
+
   /* Tablet */
   @media (max-width: 1024px) {
-    section { padding-left: 32px !important; padding-right: 32px !important; }
-    footer { padding-left: 32px !important; padding-right: 32px !important; }
+    .dn-section { padding: 80px 32px; }
+    .dn-nav { gap: 22px !important; }
   }
 
   /* Mobile */
-  @media (max-width: 720px) {
-    section { padding: 64px 20px !important; }
-    footer { padding: 56px 20px 40px !important; }
-    h1 { font-size: clamp(48px, 12vw, 80px) !important; }
-    h2 { font-size: clamp(34px, 8.5vw, 56px) !important; }
-
-    /* Collapse all 2- and 3-col grids to single column */
-    [style*="grid-template-columns: 1fr 1fr"],
-    [style*="grid-template-columns: 1.4fr 1fr"],
-    [style*="grid-template-columns: 1fr 1.3fr"],
-    [style*="grid-template-columns: 1.4fr 1fr 1fr"],
-    [style*="grid-template-columns: repeat(3, 1fr)"] {
-      grid-template-columns: 1fr !important;
-      gap: 32px !important;
-    }
-
-    /* Cost-per-win calc 4-col → 2x2 */
-    [style*="grid-template-columns: 1.3fr 1fr 1fr 1fr"] {
-      grid-template-columns: 1fr 1fr !important;
-      gap: 20px !important;
-    }
-
-    /* Drought timeline 22-col → 11-col */
-    [style*="grid-template-columns: repeat(22, 1fr)"] {
-      grid-template-columns: repeat(11, 1fr) !important;
-    }
-
-    /* Said vs. Seen 3-col → stacked */
-    [style*="grid-template-columns: auto 1fr 1fr"] {
-      grid-template-columns: 1fr !important;
-    }
-    /* Said vs. Seen — promise (col 2) in demon blue, reality (col 3) in scarlet */
-    [style*="grid-template-columns: auto 1fr 1fr"] > *:nth-child(4n+2),
-    [style*="grid-template-columns: auto 1fr 1fr"] > *:nth-child(4n+2) * {
-      color: var(--accent-ink) !important;
-    }
-    [style*="grid-template-columns: auto 1fr 1fr"] > *:nth-child(4n+3),
-    [style*="grid-template-columns: auto 1fr 1fr"] > *:nth-child(4n+3) * {
-      color: var(--scarlet) !important;
-    }
-
-    /* Petition affiliation/year/zip 3-col → stacked pair */
-    [style*="grid-template-columns: 1.4fr 1fr 1fr"] {
-      grid-template-columns: 1fr !important;
-      gap: 12px !important;
-    }
-
-    /* Trend table 5-col: shrink fonts/padding */
-    [style*="grid-template-columns: 1.2fr 1fr 1fr 1.4fr 1fr"] > div {
-      font-size: 12px !important;
-      padding: 14px 2px !important;
-    }
-
-    /* Wall masonry: 1 col */
-    [style*="columnCount: 3"],
-    [style*="column-count: 3"] { column-count: 1 !important; }
-
-    /* Hero H1 */
-    [style*="clamp(64px, 9vw, 132px)"] {
-      font-size: clamp(52px, 13vw, 84px) !important;
-    }
-
-    /* Big "22" numeral */
-    [style*="clamp(180px, 26vw, 380px)"] {
-      font-size: clamp(150px, 44vw, 240px) !important;
-      margin-top: 0 !important;
-    }
-
-    /* Open-letter card: less padding on mobile */
-    [style*="padding: \"64px 72px 72px\""] {
-      padding: 40px 24px 48px !important;
-    }
-
-    /* Press tile padding */
-    [style*="padding: \"24px 26px 22px\""] {
-      padding: 18px 18px 16px !important;
-    }
-
-    /* Petition seal shrink/reposition */
-    [style*="width: 92"][style*="height: 92"] {
-      width: 56px !important;
-      height: 56px !important;
-      right: 14px !important;
-      top: 14px !important;
-    }
-    [style*="width: 92"][style*="height: 92"] > div:first-child {
-      font-size: 13px !important;
-    }
-    [style*="width: 92"][style*="height: 92"] > div:last-child {
-      font-size: 7px !important;
-    }
-
-    /* Hero nav links wrap */
-    nav { flex-wrap: wrap !important; gap: 14px !important; }
-
-    /* Trend table inner padding */
-    [style*="padding: \"8px 32px 32px\""] {
-      padding: 4px 12px 16px !important;
-    }
-
-    /* Press release card padding */
-    [style*="padding: \"36px 36px 40px\""] {
-      padding: 24px 22px 28px !important;
-    }
-    [style*="padding: \"48px 48px 56px\""] {
-      padding: 28px 20px 32px !important;
-    }
-
-    /* Hero CTA buttons */
-    [style*="padding: \"16px 28px\""] { padding: 14px 22px !important; font-size: 11px !important; }
-
-    /* Footer columns 3-col → 1-col */
-    [style*="grid-template-columns: 1.4fr 1fr 1fr"] {
-      grid-template-columns: 1fr !important;
-    }
+  @media (max-width: 820px) {
+    .dn-nav { display: none !important; }
+    .dn-burger { display: inline-flex !important; }
+    .dn-section { padding: 64px 20px !important; }
+    .dn-h1 { font-size: clamp(40px, 11vw, 64px) !important; line-height: 1.02 !important; }
+    .dn-h2 { font-size: clamp(30px, 8vw, 46px) !important; line-height: 1.05 !important; }
+    .dn-eyebrow { font-size: 11px !important; }
+    .dn-grid-2,
+    .dn-grid-3,
+    .dn-grid-4,
+    .dn-grid-asym { grid-template-columns: 1fr !important; gap: 32px !important; }
+    .dn-grid-stats-4 { grid-template-columns: 1fr 1fr !important; gap: 20px !important; }
+    .dn-trend-row { grid-template-columns: 1.4fr 1fr 1fr !important; }
+    .dn-trend-row > .dn-trend-finish,
+    .dn-trend-row > .dn-trend-ncaa,
+    .dn-trend-head > .dn-trend-finish-h,
+    .dn-trend-head > .dn-trend-ncaa-h { display: none !important; }
+    .dn-trend-head { grid-template-columns: 1.4fr 1fr 1fr !important; }
+    .dn-bars { grid-template-columns: repeat(11, 1fr) !important; }
+    .dn-wall { column-count: 1 !important; }
+    .dn-said-row { grid-template-columns: 1fr !important; padding: 20px !important; gap: 12px !important; }
+    .dn-petition-card { padding: 36px 24px 44px !important; }
+    .dn-form-row-2,
+    .dn-form-row-3 { grid-template-columns: 1fr !important; }
+    .dn-hero-pad { padding: 56px 24px 80px !important; }
+    .dn-hero-stat { padding: 18px 22px !important; }
+    .dn-arena-grid > div { padding: 18px !important; }
+    .dn-cost-grid { grid-template-columns: 1fr 1fr !important; }
+    .dn-footer-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
   }
 
-  /* Very small phones */
+  /* Phone */
   @media (max-width: 380px) {
-    section { padding: 56px 16px !important; }
-    h1 { font-size: clamp(44px, 13vw, 64px) !important; }
-    h2 { font-size: clamp(30px, 9vw, 44px) !important; }
+    .dn-section { padding: 56px 16px !important; }
+    .dn-h1 { font-size: clamp(36px, 12vw, 52px) !important; }
   }
 </style>
 </head>
